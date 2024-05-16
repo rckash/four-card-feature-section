@@ -20,12 +20,16 @@ html {
   --very-light-gray: hsl(0, 0%, 98%);
 }
 
+body {
+  background-color: var(--very-light-gray);
+}
+
 main {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 0 2rem;
-  background-color: var(--very-light-gray);
+  max-width: 1600px;
 }
 
 p {
@@ -62,6 +66,16 @@ p {
   text-align: left;
 }
 
+@media (min-width: 840px) {
+  .cards-section {
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+}
+
 .card {
   background-color: white;
   border-radius: 5px;
@@ -89,6 +103,12 @@ picture {
 
 .supervisor {
   border-top: var(--main-cyan) 4px solid;
+}
+
+.flex-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .team-builder {
