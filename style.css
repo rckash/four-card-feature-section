@@ -28,8 +28,9 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   padding: 0 2rem;
-  max-width: 1600px;
+  max-width: 1400px;
 }
 
 p {
@@ -73,6 +74,13 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+  }
+}
+
+@media (min-width: 1320px) {
+  .cards-section {
+    margin-left: 5em;
+    margin-right: 5em;
   }
 }
 
